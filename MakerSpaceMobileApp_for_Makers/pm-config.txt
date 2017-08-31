@@ -1,0 +1,15 @@
+uaa_instance_name     : "MakerSpace_Makers"
+uaa_secret            : "secret"
+uaa_uri               : "https://7a2b6c28-aa8e-4fe0-8095-db6c162f9485.predix-uaa.run.aws-usw02-pr.ice.predix.io"
+uaa_admin_account_name:admin
+uaa_admin_client_secret:secret
+
+cf_app                : "Makers_mbApp"
+
+pm_instance_name      : "Makers-mobile"
+pm_service_short_uri  : "https://90cjk1.run.aws-usw02-pr.ice.predix.io"
+
+#developer_username:
+#developer_password:
+predix_mobile_api_gateway_short_route_url:"https://90cjk1.run.aws-usw02-pr.ice.predix.io"
+

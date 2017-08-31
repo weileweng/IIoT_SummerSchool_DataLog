@@ -6,10 +6,12 @@ from pyHS100 import TPLinkSmartHomeProtocol, SmartPlug, SmartBulb
 
 _LOGGER = logging.getLogger(__name__)
 
+Port = int(os.getenv("PORT", 9999))
+
 
 class Discover:
     @staticmethod
-    def discover(protocol=None, port=9999, timeout=3):
+    def discover(protocol=None, port=Port, timeout=60):
         """
         Sends discovery message to 255.255.255.255:9999 in order
         to detect available supported devices in the local network,

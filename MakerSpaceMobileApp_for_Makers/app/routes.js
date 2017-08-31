@@ -8,7 +8,7 @@ define(['require'], function(require) {
      * @type {{redirectTo: string}}
      */
     var default_route = {
-        redirectTo: '/Charts_update.html'
+        redirectTo: '/Login.html'
     };
 
 /**
