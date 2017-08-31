@@ -1,0 +1,89 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="MachineList" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <button class="button button-icon button-inline icon ion-chevron-left" navigate-to="Menu">
+    </button>
+    <img width="320px" height="" src="files/images/MakerSpace.png" class="img-default"
+    alt="Image error">
+    <div>
+        <div class="row">
+            <div class="col">
+                <h3>
+                    Machine
+                </h3>
+            </div>
+            <div class="col">
+                <h3>
+                    Booked
+                </h3>
+            </div>
+            <div class="col">
+                <h3>
+                    Logged
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>
+                    {{machineList[0].id}}
+                </h4>
+            </div>
+            <div class="col">
+                <button class="button button-assertive button-block icon ion-close-round" ng-show="machineList[0].booked==false"
+                navigate-to="MachineOverview">
+                </button>
+                <button class="button button-balanced button-block icon ion-checkmark-round" ng-click="Alreadybooked()"
+                ng-show="machineList[0].booked==true">
+                </button>
+            </div>
+            <div class="col">
+                <button class="button button-assertive button-block icon ion-close-round" ng-show="machineList[0].login==false">
+                </button>
+                <button class="button button-balanced button-block icon ion-checkmark-round" ng-show="machineList[0].login==true">
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>
+                    {{machineList[1].id}}
+                </h4>
+            </div>
+            <div class="col">
+                <button class="button button-assertive button-block icon ion-close-round" ng-click="Youbookedit()"
+                ng-show="machineList[1].booked==false">
+                </button>
+                <button class="button button-balanced button-block icon ion-checkmark-round" ng-click="Alreadybooked()"
+                ng-show="machineList[1].booked==true">
+                </button>
+            </div>
+            <div class="col">
+                <button class="button button-assertive button-block icon ion-close-round" ng-show="machineList[1].login==false">
+                </button>
+                <button class="button button-balanced button-block icon ion-checkmark-round" ng-show="machineList[1].login==true">
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>
+                    {{machineList[2].id}}
+                </h4>
+            </div>
+            <div class="col">
+                <button class="button button-assertive button-block icon ion-close-round" ng-click="Youbookedit()"
+                ng-show="machineList[2].booked==false">
+                </button>
+                <button class="button button-balanced button-block icon ion-checkmark-round" ng-click="Alreadybooked()"
+                ng-show="machineList[2].booked==true">
+                </button>
+            </div>
+            <div class="col">
+                <button class="button button-assertive button-block icon ion-close-round" ng-show="machineList[2].login==false">
+                </button>
+                <button class="button button-balanced button-block icon ion-checkmark-round" ng-show="machineList[2].login==true">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

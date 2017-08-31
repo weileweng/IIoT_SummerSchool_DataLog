@@ -1,0 +1,19 @@
+<div ng-controller="Charts_update" ng-cloak ng-init="init()">
+    <ion-content show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+    overflow-scroll="false">
+        <img ng-="" width="" height="85px" src="files/images/imageedit_1_6727209445.png"
+        class="img-default" alt="Image error">
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">
+            </span>
+            <textarea placeholder="Enter text">3D Printer: Real-time temperature on plate (last 5 mins)</textarea>
+        </label>
+        <div ng-model="chartType">
+            <canvas id="line" class="chart chart-base" chart-data="chartData.data" chart-labels="chartData.labels"
+            chart-legend="true" chart-type="type" chart-series="chartData.series">
+            </canvas>
+        </div>
+        <button class="button button-stable button-block icon ion-checkmark-round" navigate-to="Menu">
+        </button>
+    </ion-content>
+</div>

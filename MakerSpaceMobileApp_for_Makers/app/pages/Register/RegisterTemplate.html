@@ -1,0 +1,31 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Register" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <button class="button button-icon button-inline icon ion-chevron-left" navigate-to="Login">
+    </button>
+    <img ng-="" width="" height="85px" src="files/images/imageedit_1_6727209445.png"
+    class="img-default" alt="Image error">
+    <div class="card">
+        <div class="item-divider item">
+            Register
+        </div>
+        <div class="item">
+            <div class="item item-input">
+                <input type="text" placeholder="Username" value="" ng-model="user.username">
+            </div>
+            <div class="item item-input">
+                <input type="password" placeholder="Password" value="" ng-model="user.password">
+            </div>
+            <div class="item item-input">
+                <input type="email" placeholder="Email" value="" ng-model="user.email">
+            </div>
+            <div class="item item-input">
+                <input type="text" placeholder="Country" value="" ng-model="user.country">
+            </div>
+        </div>
+    </div>
+    <button class="button button-dark button-block" ng-click="register()">
+        Save
+    </button>
+    <button class="button button-block icon ion-close-round" navigate-to="Login">
+    </button>
+</div>

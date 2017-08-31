@@ -1,0 +1,23 @@
+<div ng-controller="Charts" ng-cloak ng-init="init()">
+    <ion-content show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+    overflow-scroll="false">
+        <div class="button-bar">
+            <button class="button button-inline" ng-click="switchChartType('Line')">
+                Line
+            </button>
+            <button class="button button-inline" ng-click="switchChartType('Bar')">
+                Bar
+            </button>
+            <button class="button button-inline" ng-click="switchChartType('Radar')">
+                Radar
+            </button>
+        </div>
+        <div ng-model="chartType">
+            <canvas id="line" class="chart chart-base" chart-data="chartData.data" chart-labels="chartData.labels"
+            chart-legend="true" chart-type="type" chart-series="chartData.series">
+            </canvas>
+        </div>
+        <button class="button button-stable button-block icon ion-checkmark-round" navigate-to="Menu">
+        </button>
+    </ion-content>
+</div>

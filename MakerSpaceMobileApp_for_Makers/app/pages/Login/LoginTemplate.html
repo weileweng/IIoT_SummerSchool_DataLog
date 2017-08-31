@@ -1,0 +1,21 @@
+<div show-header="true" show-footer="false" show-top-tabs="false" show-tabs="true"
+ng-controller="Login" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <img ng-="" width="" height="85px" src="files/images/imageedit_1_6727209445.png"
+    class="img-default" alt="Image error">
+    <div class="card">
+        <div class="item">
+            <div class="item item-input">
+                <input type="text" placeholder="Username" value="" ng-model=" user.username">
+            </div>
+            <div class="item item-input">
+                <input type="password" placeholder="Password" value="" ng-model="user.password">
+            </div>
+        </div>
+    </div>
+    <button class="button button-dark button-block button-large" ng-click=" login()">
+        Sign in
+    </button>
+    <button class="button button-stable button-block button-large" navigate-to="Register">
+        Register
+    </button>
+</div>

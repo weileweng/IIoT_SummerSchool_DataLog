@@ -1,0 +1,60 @@
+<div show-header="false" show-footer="false" show-top-tabs="true" show-tabs="true"
+ng-controller="Scan" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <button class="button button-icon button-inline icon ion-chevron-left" navigate-to="Menu">
+    </button>
+    <img ng-="" width="" height="85px" src="files/images/imageedit_1_6727209445.png"
+    class="img-default" alt="Image error">
+    <button class="button button-stabl button-block button-clear" ng-click="scan_search(); buttonCheck= true"
+    ng-="">
+        Scan QR code on Machine
+    </button>
+    <div>
+        <div class="row">
+            <div class="col col-50">
+                <h4 ng-show="buttonCheck===true" ng-hide="buttonCheck===false">
+                    Machine
+                </h4>
+            </div>
+            <div class="col">
+                <h4>
+                    {{response}}
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col">
+                <h4 ng-show="buttonCheck===true" ng-hide="buttonCheck===false">
+                    Login state
+                </h4>
+            </div>
+            <div class="col">
+                <h4>
+                    {{response1}}
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col">
+                <h4 ng-show="buttonCheck===true" ng-hide="buttonCheck===false">
+                    By current user
+                </h4>
+            </div>
+            <div class="col">
+                <h4>
+                    {{response2}}
+                </h4>
+            </div>
+        </div>
+    </div>
+    <button class="button button-balanced button-block" ng-click="requestLogin()" ng-show="response1 == 'No'">
+        Login the machine
+    </button>
+    <button class="button button-assertive button-block" ng-click="requestLogout()"
+    ng-show="response1 =='Yes' && response2 == 'Yes'">
+        Logout the machine
+    </button>
+</div>
